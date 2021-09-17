@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焊接</title>
+    <!-- 引入facicon.ico网页图标 -->
+	<link rel="shortcut icon" href="../favicon.ico"  type="image/x-icon"/> 
+    <!-- 引入 layui.css -->
+    <link rel="stylesheet" href="../layui/dist/css/layui.css">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 内容排版 -->
+    <link rel="stylesheet" href="../css/typo.css">
+    <!-- 动画效果 -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- 代码高亮  -->
+    <link rel="stylesheet" href="../lib/prism/prism.css">
+    <!-- 目录生成 Tocbot -->
+    <link rel="stylesheet" href="../lib/tocbot/tocbot.css">
+    
+</head>
+<body>
+   
+    <div class="layui-row w">
+        <div class="layui-col-xs6 layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header m-card-header">焊接</div>
+                <div class="layui-card-body typo  typo-selection text js-toc-content">
+                    <b style="font-size: 18px;">目录</b>
+                    <ol id="table" style="text-decoration:none;">
+                      <li><a href="#section1">1. 视频推荐</a></li>
+                      <li><a href="#section2">2. 焊接练习</a>
+                    </ol>
+                    
+                    <h2 id="section1">1. 视频推荐 </h2>
+                   <p>焊接之前我们是一定要学会看原理图的(或者板子在画的时候符号标清楚)，知道哪里要放什么器件，认准正负极。焊接的顺序应该从低到高，先焊接电源把板子走通，别最后啥都焊好了电源没好岂不是功亏一篑 ┓( ´-` )┏</p>
+                    <p><a href="https://www.bilibili.com/video/BV1eJ411K7rM?spm_id_from=333.999.0.0" target="_blank" rel="noopener noreferrer">【焊接教学】技小新手把手教你焊接元器件</a></p>
+                    <p>下面这个视频介绍了常用工具的使用并手把手带你焊接了一个带有外设的51单片机开发板，焊完上单片机课时，人家某宝成品，你拿着自己焊的开发板，时不时拿起来用晶振反射的光闪一下妹子的眼睛，岂不是装了一手好逼  ~(￣▽￣)~*</p>
+                    <p><a href="https://www.bilibili.com/video/BV1aJ411q7Mn?p=11" target="_blank" rel="noopener noreferrer">【51单片机】手把手焊接教学</a></p>
+                   <h2 id="section2">2. 焊接练习</h2>
+                   <p>看了一万遍不如自己焊一遍，焊接没有什么捷径，就是不断地练习，从直插到贴片，从1206到0201，从小鸟到菜鸟，不要慌一点点走过去</p>
+                    <p> 大家可以去淘宝买零件自己焊，比如说心形灯，自己搜吧</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+<div id="toc"  style=" display:none;">
+    <ol class="js-toc">
+    </ol>
+</div>
+<div id="qq"  style=" display:none;">
+   <img src="/img/QQ.png" alt="">
+</div>
+
+    <!-- 引入 layui.js -->
+    <script src="../layui/dist/layui.js"></script>
+<script src="../lib/prism/prism.js"></script>
+<script src="../lib/tocbot/tocbot.min.js"></script>
+<script>
+    layui.use(['util', 'laydate', 'layer'], function(){
+      var util = layui.util
+      ,laydate = layui.laydate
+      ,$ = layui.$
+      ,layer = layui.layer;
+      //固定块
+      util.fixbar({
+        bar1: '&#xe705;'
+        ,bar2: '&#xe676;'
+        ,css: {right: 50, bottom:20}
+        ,bgcolor: '#5FB878'
+        ,click: function(type){
+          if(type === 'bar1'){
+            //页面层-自定义
+            mainIndex = layer.open({
+                type: 1, 
+                title: ['目录', 'font-size:18px;text-align:right;'],
+                content: $('#toc'),
+                offset: 'r',
+                anim: 5,
+                resize:false,
+                shade:0
+            });
+          } else if(type === 'bar2') {
+           //页面层-自定义
+           mainIndex = layer.open({
+                type: 1, 
+                title: false,
+                content: $('#qq'),
+                anim: 5,
+                resize:false,
+                closeBtn: 0,
+                shade: [0.7, '#393D49'],
+                shadeClose:true,
+                time: 60000
+            });
+          }
+        }
+      });
+    });   
+</script> 
+ <script>
+     //生成目录的初始化
+     tocbot.init({
+        //目录生成的位置
+        tocSelector: '.js-toc',
+        // 那些要生成目录
+        contentSelector: '.js-toc-content',
+        //目录级别
+        headingSelector: 'h1, h2, h3',
+    });
+
+    
+ </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/**版心*/
+.w {
+	width: 900px;
+	margin: 0 auto;
+}
+body {
+    background: url("../img/bg.png");
+}
+a{
+    text-decoration:none !important;
+}
+/*公共样式*/
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/** 头像 */
+.logo{
+    position: relative;
+    top: 10px;
+    left: 30px;
+    line-height: 40px;
+    font-size: 30px;
+    color: #00B5AD;
+    font-weight: bold;
+    font-family: KaiTi;
+}
+.text{
+    padding: 5px 80px;
+}
+/* p{
+    text-indent:2em
+} */
+/* 字体图标的引入 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.woff2?t=1631076858651') format('woff2'),
+         url('../font/iconfont.woff?t=1631076858651') format('woff'),
+         url('../font/iconfont.ttf?t=1631076858651') format('truetype');
+  }
+
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /*-----margin------*/
+.m-margin-top-small {
+    margin-top:0.5em !important;
+}
+.m-margin-top {
+    margin-top: 1em !important;
+}
+.m-margin-top-large {
+    margin-top: 3em !important;
+}
+
+.m-margin-tb-tiny {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+.m-margin-bottom-small {
+    margin-bottom: 0.5em !important;
+
+}
+/*-------text -----*/
+
+.m-text {
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8;
+}
+
+.m-card-header{
+    font-size: 15px; 
+    color:#00B5AD; 
+    font-weight: 700;
+}
+.m-card-header-about{
+    font-size: 1.28em; 
+    color:#000; 
+    font-weight: 550;
+    padding: 5px 5px 5px 20px;
+}
+.m-carder-top-border{
+    border-top: 1px solid #D4D4D5;
+}
+.m-carder-border{
+    border: 1px solid #D4D4D5;
+}
+.m-about-img{
+    width: 30px;
+    height: 30px;
+}
+.m-about-img-large{
+    width: 50px;
+    height: 30px;
+}

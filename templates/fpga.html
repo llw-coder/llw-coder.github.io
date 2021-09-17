@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPGA</title>
+    <!-- 引入facicon.ico网页图标 -->
+	<link rel="shortcut icon" href="../favicon.ico"  type="image/x-icon"/> 
+    <!-- 引入 layui.css -->
+    <link rel="stylesheet" href="../layui/dist/css/layui.css">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 内容排版 -->
+    <link rel="stylesheet" href="../css/typo.css">
+    <!-- 动画效果 -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- 代码高亮  -->
+    <link rel="stylesheet" href="../lib/prism/prism.css">
+    <!-- 目录生成 Tocbot -->
+    <link rel="stylesheet" href="../lib/tocbot/tocbot.css">
+    
+</head>
+<body>
+   
+    <div class="layui-row w">
+        <div class="layui-col-xs6 layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header m-card-header">FPGA</div>
+                <div class="layui-card-body typo  typo-selection text js-toc-content">
+                    <b style="font-size: 18px;">目录</b>
+                    <ol id="table" style="text-decoration:none;">
+                      <li><a href="#section1">1. FPGA简介</a></li>
+                      <li><a href="#section2">2. 入门FPGA</a>
+                        <ol>
+                          <li><a href="#section2-1">2.1 视频推荐</a></li>
+                        </ol>
+                      </li>
+                      <li><a href="#section3">3. 项目练手</a></li>
+
+                    </ol>
+                    
+                    <h2 id="section1">1. FPGA简介 </h2>
+                   <p>FPGA（Field Programmable Gate Array）是在PAL、GAL等可编程器件的基础上进一步发展的产物。它是作为专用集成电路（ASIC）领域中的一种半定制电路而出现的，既解决了定制电路的不足，又克服了原有可编程器件门电路数有限的缺点。</p>
+                   <p>所谓集成电路就是将之前使用各种分立元器件(比如电阻，二极管，三极管等) 搭建的电路集成到一块芯片上就称之为集成电路。集成电路对于离散晶体管有成本和性能方面的优势。所以集成电路迅速的替代了离散晶体管电路。而根据处理信号的不同，集成电路可以分为模拟集成电路、数字集成电路、和兼具模拟与数字的混合信号集成电路。FPGA（现场可编程门阵列）主要是处理数字信号（虽然最新的FPGA已集成部分模拟电路，但是FPGA总的功能主要还是在处理数字信号。</p>
+                  
+                   <h2 id="section2">2. 入门FPGA</h2>
+                    <p>这个入门我是听学校的课程的，咱们学院的李老师讲的也是很好的，大家大三敬请期待吧！要是想提前学的话看我下面推荐的视频。
+                    </p>
+                    <h2 id="section2-1">2.1 视频推荐</h2>
+                    <p><a href="https://www.bilibili.com/video/BV17z411i7er?from=search&seid=9137655082841561948&spm_id_from=333.337.0.0" target="_blank" rel="noopener noreferrer">【野火】FPGA系列教学视频，硬件基于野火FPGA EP4CE10征途系列开发板</a></p>
+                    <p><a href="https://www.bilibili.com/video/BV1pJ411S7ka?spm_id_from=333.999.0.0" target="_blank" rel="noopener noreferrer">小梅哥2019FPGA培训班全程高清实录</a></p>
+
+                    <h2 id="section3">3. 项目练手</h2>
+                    <p> 学校可能会有课设到时候练习就好，我当时做了教室温控，红外传感，抢答器，计时器需要的去群里取吧。
+                        </p>
+                        <p>木有视频教学，木有课设论文！</p>
+                    
+                        <p><a href="https://pan.baidu.com/s/1cxe74W0ip8X9tQFwb_Qsaw" target="_blank">野火讲解视频网盘链接</a> <mark>提取码：4tw0</mark></p> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+<div id="toc"  style=" display:none;">
+    <ol class="js-toc">
+    </ol>
+</div>
+<div id="qq"  style=" display:none;">
+   <img src="/img/QQ.png" alt="">
+</div>
+
+    <!-- 引入 layui.js -->
+    <script src="../layui/dist/layui.js"></script>
+<script src="../lib/prism/prism.js"></script>
+<script src="../lib/tocbot/tocbot.min.js"></script>
+<script>
+    layui.use(['util', 'laydate', 'layer'], function(){
+      var util = layui.util
+      ,laydate = layui.laydate
+      ,$ = layui.$
+      ,layer = layui.layer;
+      //固定块
+      util.fixbar({
+        bar1: '&#xe705;'
+        ,bar2: '&#xe676;'
+        ,css: {right: 50, bottom:20}
+        ,bgcolor: '#5FB878'
+        ,click: function(type){
+          if(type === 'bar1'){
+            //页面层-自定义
+            mainIndex = layer.open({
+                type: 1, 
+                title: ['目录', 'font-size:18px;text-align:right;'],
+                content: $('#toc'),
+                offset: 'r',
+                anim: 5,
+                resize:false,
+                shade:0
+            });
+          } else if(type === 'bar2') {
+           //页面层-自定义
+           mainIndex = layer.open({
+                type: 1, 
+                title: false,
+                content: $('#qq'),
+                anim: 5,
+                resize:false,
+                closeBtn: 0,
+                shade: [0.7, '#393D49'],
+                shadeClose:true,
+                time: 60000
+            });
+          }
+        }
+      });
+    });   
+</script> 
+ <script>
+     //生成目录的初始化
+     tocbot.init({
+        //目录生成的位置
+        tocSelector: '.js-toc',
+        // 那些要生成目录
+        contentSelector: '.js-toc-content',
+        //目录级别
+        headingSelector: 'h1, h2, h3',
+    });
+
+    
+ </script>
+</body>
+</html>

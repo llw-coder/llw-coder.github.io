@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上位机设计</title>
+    <!-- 引入facicon.ico网页图标 -->
+	<link rel="shortcut icon" href="../favicon.ico"  type="image/x-icon"/> 
+    <!-- 引入 layui.css -->
+    <link rel="stylesheet" href="../layui/dist/css/layui.css">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 内容排版 -->
+    <link rel="stylesheet" href="../css/typo.css">
+    <!-- 动画效果 -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- 代码高亮  -->
+    <link rel="stylesheet" href="../lib/prism/prism.css">
+    <!-- 目录生成 Tocbot -->
+    <link rel="stylesheet" href="../lib/tocbot/tocbot.css">
+    
+</head>
+<body>
+   
+    <div class="layui-row w">
+        <div class="layui-col-xs6 layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header m-card-header">上位机设计</div>
+                <div class="layui-card-body typo  typo-selection text js-toc-content">
+                    <b style="font-size: 18px;">目录</b>
+                    <ol id="table" style="text-decoration:none;">
+                      <li><a href="#section1">1. 视频推荐</a>
+                        <ol>
+                            <li><a href="#section1-1">1.1 电脑上位机</a></li>
+                            <li><a href="#section1-1">1.2 手机上位机</a></li>
+                        </ol>
+                    </li>
+                    </ol>
+                    
+                    <h2 id="section1">1. 视频推荐 </h2>
+                    <h3 id="section1-1">1.1 电脑上位机 </h3>
+                   <p>单片机，一块黑黑的玩意，我们怎么和它沟通那，可以使用串口通信，那串口通信指令的收发的显示我们怎么才能看见那，这时候就需要上位机了</p>
+                    <p><a href="https://www.bilibili.com/video/BV1Rx411R71p?from=search&seid=14785624216924426774&spm_id_from=333.337.0.0" target="_blank" rel="noopener noreferrer">C#上位机开发串口通信编程</a></p>
+
+                    <h3 id="section1-2">1.2 手机上位机</h3>
+                    <p>上面讲的是电脑上的上位机，那我们想要在手机上控制怎么办那，这需要我们学纯软件了：基于Java编程语言的Android开发 这涉及到软件专业了而且不简单，可我们就是想开发一个蓝牙app,不想那么费事，怎么办那？</p>
+                    <p>这时候<mark>App Inventor</mark> 出现了</p>
+                    <p>App Inventor 原是Google实验室（Google Lab）的一个子计划，由一群Google工程师和勇于挑战的Google使用者共同参与设计完成。Google App Inventor是一个完全在线开发的Android编程环境，抛弃复杂的程式代码而使用积木式的堆叠法来完成您的Android程式。除此之外它也正式支持乐高NXT机器人，对于Android初学者或是机器人开发者来说是一大福音。因为对于想要用手机控制机器人的使用者而言，他们不大需要太华丽的界面，只要使用基本元件例如按钮、文字输入输出即可。</p>
+                    <p>着急做出来app的可以不用看下面这一个视频</p>
+                    <p><a href="https://www.bilibili.com/video/BV1wv411B7pa?p=27/" target="_blank" rel="noopener noreferrer">App Inventor基础入门教程</a></p>
+                
+                    <h4>蓝牙APP</h4>
+                    <p><a href="https://www.bilibili.com/video/BV1Cy4y1h7ma/?spm_id_from=333.788.recommend_more_video.9" target="_blank" rel="noopener noreferrer">蓝牙APP制作（App inventor开发APP、AT指令配置蓝牙模块</a></p>
+                    <p><a href="https://www.bilibili.com/video/BV1b4411Y7Ty?spm_id_from=333.999.0.0" target="_blank" rel="noopener noreferrer">快速制作自己的蓝牙APP与Arduino进行通讯</a></p>
+                    <h4>物联网APP</h4>
+                    <p><a href="https://www.bilibili.com/video/BV1rK4y1o7gx?spm_id_from=333.999.0.0" target="_blank" rel="noopener noreferrer">appinventor开发接入OneNET</a></p>
+                    <p><a href="https://www.bilibili.com/video/BV14E411u7pU?spm_id_from=333.999.0.0" target="_blank" rel="noopener noreferrer">十分钟毕业设计之物联网APP制作</a></p>
+               
+                    <p>视频和软件下载：</p>
+                    <p><a href="https://pan.baidu.com/s/1DBqmFsgJx9Oxaxtn0_e5Sg" target="_blank">网盘链接</a> <mark>提取码：j98d</mark></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+<div id="toc"  style=" display:none;">
+    <ol class="js-toc">
+    </ol>
+</div>
+<div id="qq"  style=" display:none;">
+   <img src="/img/QQ.png" alt="">
+</div>
+
+    <!-- 引入 layui.js -->
+    <script src="../layui/dist/layui.js"></script>
+<script src="../lib/prism/prism.js"></script>
+<script src="../lib/tocbot/tocbot.min.js"></script>
+<script>
+    layui.use(['util', 'laydate', 'layer'], function(){
+      var util = layui.util
+      ,laydate = layui.laydate
+      ,$ = layui.$
+      ,layer = layui.layer;
+      //固定块
+      util.fixbar({
+        bar1: '&#xe705;'
+        ,bar2: '&#xe676;'
+        ,css: {right: 50, bottom:20}
+        ,bgcolor: '#5FB878'
+        ,click: function(type){
+          if(type === 'bar1'){
+            //页面层-自定义
+            mainIndex = layer.open({
+                type: 1, 
+                title: ['目录', 'font-size:18px;text-align:right;'],
+                content: $('#toc'),
+                offset: 'r',
+                anim: 5,
+                resize:false,
+                shade:0
+            });
+          } else if(type === 'bar2') {
+           //页面层-自定义
+           mainIndex = layer.open({
+                type: 1, 
+                title: false,
+                content: $('#qq'),
+                anim: 5,
+                resize:false,
+                closeBtn: 0,
+                shade: [0.7, '#393D49'],
+                shadeClose:true,
+                time: 60000
+            });
+          }
+        }
+      });
+    });   
+</script> 
+ <script>
+     //生成目录的初始化
+     tocbot.init({
+        //目录生成的位置
+        tocSelector: '.js-toc',
+        // 那些要生成目录
+        contentSelector: '.js-toc-content',
+        //目录级别
+        headingSelector: 'h1, h2, h3',
+    });
+
+    
+ </script>
+</body>
+</html>

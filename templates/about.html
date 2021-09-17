@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我</title>
+     <!-- 引入facicon.ico网页图标 -->
+	<link rel="shortcut icon" href="../favicon.ico"  type="image/x-icon"/> 
+    <!-- 引入 layui.css -->
+    <link rel="stylesheet" href="../layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 内容排版 -->
+    <link rel="stylesheet" href="../css/typo.css">
+</head>
+<body>
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header"  style="box-shadow: 10px 3px 3px #888888; ">
+            <a href="/main.html"><h2 class="fl logo" style="padding-left: 30px;">Record</h2></a>
+            <!-- 头部区域（可配合layui 已有的水平导航） -->
+            <ul class="layui-nav layui-layout-left">
+                <!-- 移动端显示 -->
+                <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
+                    <a href="javascript:;"> <i id="leftEnumIcon" class="layui-icon layui-icon-spread-left"></i></a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right layui-hide layui-show-md-block">
+                <li class="layui-nav-item ">
+                      <a href="#"><img src="../img/logo.jpg" class="layui-nav-img">我</a>
+                <dl class="layui-nav-child">
+                <dd><a href="javascript:;" onclick="logout()">退出</a></dd>
+                </dl>
+                </li>
+                
+            </ul>
+        </div>
+    <div class="layui-body layui-container">
+        <div class=" m-margin-top-large">
+            <div class="layui row layui-col-space30">
+                <div class="layui-col-md8">
+                    <div class="layui-panel typo  typo-selection ">
+                        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                            <legend>网页诞生记</legend>
+                        </fieldset>
+                        <div class="text">
+                            <p>大三暑假实习java后端开发，公司用的前端框架是<mark>layui</mark>，
+                                然后想着写个网页练习一下布局啥的突然想着可以趁着这个机会也把自己学过的硬件总结一下吧
+                            </p>
+                            <p>然后这是纯前端，没有与后端交互，因为我想着写出来不仅自己留个纪念，还是发布出来给学弟学妹们(喜欢硬件的)借鉴一下我的学习之路吧，带后端发布的话我还得租个服务器，
+                                我太穷了，没有钱<img src="../img/dog_cry.gif" class="m-about-img">,而且我是个菜鸟并写不出来什么厉害的网站，所幸这只是一个记录性质的网页，提前说一下我
+                                <u class="typo-u">真的很菜</u>，我只是比你们在B站上多学了一点，对没错就是小破站，我所有的硬件学习都是在小破站上进行的，遇到不会的up主都有他们的群，可以加群问他们，有的可能需要入群费，也可以加我的QQ群一起交流，里面也有我收集的一些学习资料，
+                                然后我网站中提到的99.9%的资料都在我的网盘中，需要的自己去下载
+                            </p>
+                            <p>在写这个网站的时候是大四上学期本应该开学的时间，因为疫情的小爆发又开始网上教学了，一开学就要选毕设课题了，所以这里面我也准备了一些毕设项目用于自己保命(一直搞后端，硬件好多都忘了)
+                                <img src="../img/cry.jpg" class="m-about-img">
+                                当然了看到这个网站的
+                                18级的同僚们你们也可以参考一下，我不相信我点这么背和你们选择同一个课题
+                                <img src="../img/huang.jpg" class="m-about-img-large">
+                            </p>
+                            <p>最后我想对学弟学妹们说嵌入式是一个很长的路我只是把我走的很短的几步告诉了你们，之后还有很长的路，还有很美丽的风景等着你们！之后的大佬们希望当你们临近毕业了能将这个网站完善然后把你们的知识传承下去
+                                本网站的源码
+                                <a href="https://gitee.com/mianer/record" target="_blank">点击链接进入</a>，当然你们也可以自己重新开发。加油，郑工人！</p>
+                        </div>
+                       
+                    </div> 
+
+                </div>
+                <div class="layui-col-md4">
+                    <div class="layui-card m-carder-border">
+                        <div class="layui-card-header m-card-header-about">
+                            关于我
+                        </div>
+                        <div class="layui-card-body m-carder-top-border">
+                            <p class="m-text">一个跃入人海的打工人，一个终身学习者，誓将学习无限循环. 希望结识可以共同成长的小伙伴.</p>
+                            <p class="m-text m-margin-top">喜欢鼓捣一些小东西，闲下来喜欢唱歌，打篮球，喜欢一切未知的事物.</p>
+                        </div>
+                        <div class="layui-card-body m-carder-top-border">
+                            <button class="layui-btn layui-btn-normal layui-btn-radius layui-btn-sm " style="margin-left: 20px;">硬件</button>
+                            <button type="button" class="layui-btn layui-btn-radius layui-btn-sm">分享</button>
+                            <button type="button" class="layui-btn layui-btn-radius layui-btn-sm" style="background-color: pink;">运动</button>
+                            <button type="button" class="layui-btn layui-btn-warm layui-btn-radius layui-btn-sm">编程</button>
+                            <button type="button" class="layui-btn layui-btn-danger layui-btn-radius layui-btn-sm">唱歌</button>
+                        </div>
+                        <div class="layui-card-body m-carder-top-border">
+                            <button class="layui-btn  layui-btn-primary layui-btn-sm layui-btn-radius" style="margin-left: 20px;">51</button>
+                            <button type="button" class="layui-btn layui-btn-primary layui-btn-radius layui-btn-sm">32</button>
+                            <button type="button" class="layui-btn layui-btn-primary layui-btn-radius  layui-btn-sm" >esp32</button>
+                            <button type="button" class="layui-btn layui-btn-primary layui-btn-radius  layui-btn-sm">C</button>
+                            <button type="button" class="layui-btn layui-btn-primary layui-btn-radius layui-btn-sm">java</button>
+                            <div class="m-margin-top">
+                                <button type="button" class="layui-btn layui-btn-primary layui-btn-radius layui-btn-sm" style="margin-left: 20px;">layui</button>
+                                <button type="button" class="layui-btn layui-btn-primary layui-btn-radius layui-btn-sm">mysql</button>
+                                <button type="button" class="layui-btn layui-btn-primary layui-btn-radius layui-btn-sm">spring</button>
+                                <button type="button" class="layui-btn layui-btn-primary layui-btn-radius layui-btn-sm">vue</button>
+                                <button type="button" class="layui-btn layui-btn-primary layui-btn-radius layui-btn-sm">...</button>
+                            </div>
+                        </div>
+                        <div class="layui-card-body m-carder-top-border">
+                            <a href="#" id="wechat" ><i class="layui-icon layui-icon-login-wechat"style="font-size: 30px; color: #38C872; margin-left: 65px;"></i></a>  
+                            <a href="#" id="qq"><i class="layui-icon layui-icon-login-qq" style="font-size: 30px; color: #4A9AFD; margin-left: 20px;"></i> </a> 
+                            <a href="https://github.com/llw-coder" target="_blank"><i class="iconfont" style="font-size: 30px; color: #333333; margin-left: 20px;" >&#xe6a4;</i></a>  
+                        </div>
+                        
+                    </div> 
+                </div>
+            </div>
+    
+        </div>   
+       
+    </div>
+
+</div>
+
+<div id="myqqpic" style="display:none;">
+    <img src="../img/myqq.png" alt="">
+ </div>
+ <div id="wechatpic" style=" display:none;">
+    <img src="../img/wechat.png" alt="">
+ </div>
+<!-- 引入 layui.js -->
+<script src="../layui/dist/layui.js"></script>
+
+<script>
+     //JS 
+     layui.use(['element', 'layer', 'util'], function () {
+            var element = layui.element
+                , layer = layui.layer
+                , util = layui.util
+                , $ = layui.$;
+
+    $('#wechat').click(function (){
+         //页面层-自定义
+         mainIndex = layer.open({
+                type: 1, 
+                title: false,
+                content: $('#wechatpic'),
+                anim: 5,
+                resize:false,
+                closeBtn: 0,
+                shade: [0.7, '#393D49'],
+                shadeClose:true,
+                time: 60000
+            }); 
+    })
+    $('#qq').click(function (){
+         //页面层-自定义
+         mainIndex = layer.open({
+                type: 1, 
+                title: false,
+                content: $('#myqqpic'),
+                anim: 5,
+                resize:false,
+                closeBtn: 0,
+                shade: [0.7, '#393D49'],
+                shadeClose:true,
+                time: 60000
+            }); 
+    })
+})
+    function logout(){
+            sessionStorage.removeItem("token");
+            layer.msg('正在退出', {icon: 4,time:1000}); 
+            setTimeout(function(){
+            window.location.replace('../index.html')
+            },1500) 
+        }
+var token = sessionStorage.getItem("token");
+if(token == null || token != 123){
+    window.location.replace('../index.html')
+}        
+</script>
+</body>
+</html>

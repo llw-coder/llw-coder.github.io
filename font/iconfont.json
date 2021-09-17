@@ -1,0 +1,142 @@
+{
+  "id": "2790681",
+  "name": "record",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1131",
+      "name": "资料库",
+      "font_class": "ziliaoku",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "715763",
+      "name": "工具箱",
+      "font_class": "gongjuxiang",
+      "unicode": "e823",
+      "unicode_decimal": 59427
+    },
+    {
+      "icon_id": "1795841",
+      "name": "50店铺-线性",
+      "font_class": "dianpu-xianxing",
+      "unicode": "e90e",
+      "unicode_decimal": 59662
+    },
+    {
+      "icon_id": "15531888",
+      "name": "7_round_solid_数字7_by_climei",
+      "font_class": "7_round_solid",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "15531890",
+      "name": "6_round_solid_数字6_by_climei",
+      "font_class": "6_round_solid",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "15531891",
+      "name": "9_round_solid_数字9_by_climei",
+      "font_class": "9_round_solid",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "15531903",
+      "name": "8_round_solid_数字8_by_climei",
+      "font_class": "8_round_solid",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "15531894",
+      "name": "5_round_solid_数字5_by_climei",
+      "font_class": "5_round_solid",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "1898786",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "23185109",
+      "name": "gitee2",
+      "font_class": "gitee2",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "16289215",
+      "name": "数字 4",
+      "font_class": "shuzi4",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    },
+    {
+      "icon_id": "17128495",
+      "name": "数字3",
+      "font_class": "shuzi1",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "22669315",
+      "name": "数字2",
+      "font_class": "shuzi2",
+      "unicode": "e716",
+      "unicode_decimal": 59158
+    },
+    {
+      "icon_id": "22793564",
+      "name": "数字1 (1)",
+      "font_class": "shuzi11",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "329829",
+      "name": "芯片2",
+      "font_class": "xinpian2",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "12363478",
+      "name": "芯片，CPU",
+      "font_class": "cpu-on",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "12614678",
+      "name": "芯片",
+      "font_class": "xinpian1",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "17866158",
+      "name": "芯片",
+      "font_class": "xinpian3",
+      "unicode": "e71e",
+      "unicode_decimal": 59166
+    },
+    {
+      "icon_id": "20460978",
+      "name": "芯片-01",
+      "font_class": "xinpian-01",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
